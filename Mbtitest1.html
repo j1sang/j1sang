@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="JSstyle.css">
+</head>
+<body class="container">
+    <article class="MBTI">
+        <h1 class="mt-5 text-center">MBTI 유형 별 선택하기</h1>
+        <button type="button" class="btn btn-primary mt-5" onclick='ESTJ();'>ESTJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ESTP();'>ESTP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ESFJ();'>ESFJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ESFP();'>ESFP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ENTJ();'>ENTJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ENTP();'>ENTP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ENFJ();'>ENFJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ENFP();'>ENFP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ISTJ();'>ISTJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ISTP();'>ISTP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ISFJ();'>ISFJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='ISFP();'>ISFP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='INTJ();'>INTJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='INTP();'>INTP</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='INFJ();'>INFJ</button>
+        <button type="button" class="btn btn-primary mt-5" onclick='INFP();'>INFP</button>
+    </article>
+    <article class="ESTJ">
+        <h2 class="text-center mt-5">ESTJ의 특징</h2>
+        <body>
+            고집 셈, 현실적, 이성적, 직설적<BR>
+            호불호 확실<BR>
+            사람 많은거 극혐<BR>
+            리더 맡는거 싫어하는데 막상 하면 잘함<BR>
+            나가서 노는것보단 이것저것 배우는게 좋음<BR>
+            외로움 별로 안탐<BR>
+            싸우는 거 싫어하지만 싸워서 지는거 싫어함<BR>
+            일처리 못하는 거 세상에서 제일 싫음<BR>
+            시간약속 어기는 거 싫고 즉흥적인거 싫음 번개약속 극 혐<BR>
+            내 시간 방해받는거 싫고 나한테 지적하려면 오억가지 근거 갖고 와야함 근데 하나라도 아닌 것 같으면 다 씹고 걍 마웨함<BR>
+            남에게 관심없고 오로지 나한테만 집중<BR>
+            목표 설정해놓고 그 목표 이룰때까지 한 우물만 팜<BR>
+            사람들이 아는 내 성격이랑 혼자 있을 때랑 조금 다름<BR>
+            모든게 제자리에 있어야 하고 내 계획이 절대 틀어지면 안됨<BR>
+            뭐든 확실한 게 좋음 딱딱 떨어지는거<BR>
+            리더역할 주도적으로 자주 함<BR>
+            누가 일 못하는 거 못 보고 차라리 그럴바에 내가 두세배로 일 다 해놓음(entj랑 비슷한 듯)<BR>
+            공감능력 X(누가 힘든얘기 하면 감정적 공감보다 상황분석 먼저하고 누가 잘못했네 머릿속으로 따지고 있음<BR>
+            그치만 상처받을까봐 얘기는 안함 위로 되게 못함)<BR>
+                <BR><BR>
+                    <button type="button" class="btn btn-primary mt-5" onclick='ESTJBAD();'>ESTJ의 단점 보기</button>
+        </body>
+                    <article class="ESTJBAD">
+                        <h3 class="text-center mt-5">ESTJ의 단점</h3>
+                        <BODY>
+                            단점들 ~~
+                        </BODY>
+                    </article>
+        
+    </article>
+
+    <article class="ESTP">
+        <h2 class="text-center mt-5">ESTJ에 대한 설명</h2>
+        <body>
+            ESTP는 이렇다.
+        </body>
+    </article>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+         $(".ESTP").hide();
+         $(".ESTJ").hide();
+        
+        function ESTJ () {
+            $(".MBTI").hide();
+            $(".ESTJ").show();
+            $(".ESTP").hide();
+
+            $(".ESTJBAD").hide();
+        }
+        function ESTJBAD () {
+            $(".ESTJ").hide();
+            $(".ESTJBAD").show();
+            
+         }
+        function ESTP () {
+            $(".MBTI").hide();
+            $(".ESTJ").hide();
+            $(".ESTP").show();
+        }
+    </script>
+</body>
+</html>  
